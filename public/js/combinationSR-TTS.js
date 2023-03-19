@@ -13,7 +13,13 @@ function populateVoiceList() {
 populateVoiceList();
 
 
-let pregunta = ["¿Te gusta el sushi?", "¿Te gusta el color rosa?","¿Eres o no eres?","¿Te gusta bing?"]
+let pregunta = ["¿Te gusta la Inteligencia Artificial?","¿Te parezco amigable?", "Y, ¿estás estudiando en la universidad?",
+"Oh, me han comentado que yo soy mejor que chatGTP, ¿es cierto eso?","Quiero saber mas de tu vida...¿Tienes esposa?",
+"Entonces, ¿Este 2023 cumples 20 años?", "¿El profesor Alexis fue paciente con ustedes?",
+"¿Tus compañeros te ayudaron en el proytecto final del curso?", "¿Te animarías a llevar otro curso con Alexis?",
+"¿Ya te suscribiste al canal APEJA en Youtube?", "¿Postularás a una beca de pregrado para ir a Japón este año?",
+"¿Sabías programar en JavaScript antes de llevar este curso?", "¿Asistirás virtualmente al Encuentro de Investigadores Peruanos en Japón?"]
+
 
 window.populatevoice = populateVoiceList;
 const recognition = new SpeechRecognition();
@@ -37,11 +43,11 @@ let comenzar_hablar2 = document.getElementById("convertirVoz2");
 let estado = "preguntando_nombre";
 let nombre = "";
 
-let respuestas_positivas = ["sí","si","claro","por supuesto","me gusta mucho","me encanta","me fascina","me enloquece"];
+let respuestas_positivas = ["sí","si","claro","por supuesto","me gusta mucho","me encanta","me fascina","me enloquece","es cierto","por supuesto","sabía solo"];
 let respuestas_negativas = ["no","no lo entiendo","lo detesto","lo odio", "me aburre", "me estresa", "no me gusta"];
 
-let comentario_positivo = ["genial","excelente","a mi también","Que onda wey","¡Fantástico!","¡Estupendo!"];
-let comentario_negativo = ["oh, que pena","ni modo", "es una lástima","¿Cómo es posible?","entiendo"];
+let comentario_positivo = ["Qué bien! Me alegro","Genial, comienzas a caerme bien","Es estupendo escuchar eso","Oh qué bueno","Me lo esperaba y eso es bueno","Excelente noticia","Genial, es grato escuchar eso","Qué sorpresa","Bien por ti"];
+let comentario_negativo = ["Entiendo, no te preocupes","Es una lástima", "¿Cómo es posible?","Es una lástima"];
 
 let empezar_recognition  = () =>{
   recognition.start();
@@ -85,7 +91,7 @@ window.recognition2  = recognition2;
       case "preguntando_nombre":
         let palabras = comando_recibido.split(" ");
         let nombre = palabras[palabras.length-1];
-        hacer_hablar_pc("hola "+ nombre + " ¿Te gusta el curso de interacción humano agente?",empezar_recognition);
+        hacer_hablar_pc("hola "+ nombre + "mucho gusto, soy un agente virtual hecho en el curso de Interaccion con Agentes ¿Es la primera vez que hablas con alguien como yo?",empezar_recognition);
 
         estado = "respuesta_a_la_pregunta";
       break;
