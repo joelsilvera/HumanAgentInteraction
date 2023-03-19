@@ -13,12 +13,7 @@ function populateVoiceList() {
 populateVoiceList();
 
 
-let pregunta = ["¿Te gusta la Inteligencia Artificial?","¿Te parezco amigable?", "Y, ¿estás estudiando en la universidad?",
-"Oh, me han comentado que yo soy mejor que chatGTP, ¿es cierto eso?","Quiero saber mas de tu vida...¿Tienes esposa?",
-"Entonces, ¿Este 2023 cumples 20 años?", "¿El profesor Alexis fue paciente con ustedes?",
-"¿Tus compañeros te ayudaron en el proytecto final del curso?", "¿Te animarías a llevar otro curso con Alexis?",
-"¿Ya te suscribiste al canal APEJA en Youtube?", "¿Postularás a una beca de pregrado para ir a Japón este año?",
-"¿Sabías programar en JavaScript antes de llevar este curso?", "¿Asistirás virtualmente al Encuentro de Investigadores Peruanos en Japón?"]
+let pregunta = ["¿Te gusta la Inteligencia Artificial?","¿Te parezco amigable?", "Y, ¿estás estudiando en la universidad?","Oh, me han comentado que yo soy mejor que chatGTP, ¿es cierto eso?","Quiero saber mas de tu vida...¿Tienes esposa?","Entonces, ¿Este 2023 cumples 20 años?", "¿El profesor Alexis fue paciente con ustedes?","¿Tus compañeros te ayudaron en el proytecto final del curso?", "¿Te animarías a llevar otro curso con Alexis?","¿Ya te suscribiste al canal APEJA en Youtube?", "¿Postularás a una beca de pregrado para ir a Japón este año?","¿Sabías programar en JavaScript antes de llevar este curso?", "¿Asistirás virtualmente al Encuentro de Investigadores Peruanos en Japón?"]
 
 
 window.populatevoice = populateVoiceList;
