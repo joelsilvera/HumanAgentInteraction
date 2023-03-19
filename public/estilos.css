@@ -1,0 +1,21 @@
+.btn{
+    margin: 2rem 0rem;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+button:active{
+    background-color: rgb(16, 96, 153);
+}
+.btn-grabar{
+    background-color: rgb(184, 52, 156);
+}
